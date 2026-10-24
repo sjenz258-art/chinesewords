@@ -21,7 +21,7 @@ jobs:
     timeout-minutes: 15
     env:
       OPENAI_API_KEY: ""
-      DATABASE_PATH: ${{ runner.temp }}/reading-ci.sqlite
+      DATABASE_PATH: data/reading-ci.sqlite
     steps:
       - name: Check out source
         uses: actions/checkout@v4
